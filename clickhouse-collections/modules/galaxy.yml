@@ -1,0 +1,12 @@
+namespace: ch
+name: modules
+version: 1.0.2
+authors:
+  - <evergreen.mike@yandex.ru>
+readme: README.md
+dependencies: {}
+license: []
+tags: []
+description: ansible-galaxy collection with clickhouse modules
+documentation: docs/
+repository: 
