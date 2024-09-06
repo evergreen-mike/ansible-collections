@@ -86,7 +86,7 @@ def exec_query(ch_client, query, query_params):
     try:
         if query_params is not None:
             query = query % tuple(query_params)
-        if query.split(' ')[0].upper() == "SELECT":
+        if query.split(' ')[0].upper() in ["SELECT","SHOW]":
             result = ch_client.query(query)
             #raise Exception(result)
             return {"changed": False, "query_result": result.result_rows}
